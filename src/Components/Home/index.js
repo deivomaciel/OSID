@@ -1,10 +1,13 @@
 import Product from '../Product/index'
 import './styles.css'
 import { VscSearch } from 'react-icons/vsc'
+import { AiFillHeart } from 'react-icons/ai'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { BsFillCartFill } from 'react-icons/bs'
+import { RiCoupon2Fill } from 'react-icons/ri'
 import LogoDulce from '../../assets/logo_dulce.png'
 import DulceCafe from '../../assets/dulce_cafe.png'
-import Doacao from '../../assets/doacao.jpeg'
+import Doacao  from '../../assets/doacao.jpeg'
 import Osid from '../../assets/osid.png'
 import DulceNatura from '../../assets/dulce_natura.png'
 import DulceSabor from '../../assets/dulce_sabor.png'
@@ -87,9 +90,31 @@ function Home() {
                 <div className='header-container'>
                     <img src={LogoDulce} alt="Logo Irmã Dulce"/>
                     <div className='input-container'>
-                        <span>
-                            <VscSearch size={16}/>
-                        </span>
+                        <div className='input-things'>
+                            <span>
+                                <VscSearch size={16}/>
+                            </span>
+
+                            <div className='buttons'>
+                                <button>
+                                    <span>
+                                        <RiCoupon2Fill fill='#777777' size={16}/>
+                                    </span>
+                                </button>
+
+                                <button>
+                                    <span>
+                                        <AiFillHeart fill='#777777' size={16}/>
+                                    </span>
+                                </button>
+
+                                <button>
+                                    <span>
+                                        <BsFillCartFill fill='#777777' size={16}/>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                         <input type='search' />
                     </div>
                 </div>
