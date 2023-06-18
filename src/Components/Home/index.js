@@ -4,6 +4,7 @@ import { VscSearch } from 'react-icons/vsc'
 import { AiOutlineMenu } from 'react-icons/ai'
 import LogoDulce from '../../assets/logo_dulce.png'
 import DulceCafe from '../../assets/dulce_cafe.png'
+import Doacao from '../../assets/doacao.jpeg'
 import Osid from '../../assets/osid.png'
 import DulceNatura from '../../assets/dulce_natura.png'
 import DulceSabor from '../../assets/dulce_sabor.png'
@@ -99,16 +100,6 @@ function Home() {
 
                 <div className='lojas-container'>
                     <div className='lojas-btn-container'>
-                        <button id='all' className='loja-btn'>
-                            <span>
-                                <AiOutlineMenu size={24}/>
-                            </span>
-                        </button>
-
-                        <p>Todas</p>
-                    </div>
-
-                    <div className='lojas-btn-container'>
                         <button className='loja-btn'>
                             <span className='btn-logo'>
                                 <img src={DulceCafe} />
@@ -146,6 +137,26 @@ function Home() {
                         </button>
 
                         <p>Dulce Sabor</p>
+                    </div>
+
+                    <div className='lojas-btn-container'>
+                        <button id='all' className='loja-btn'>
+                            <span>
+                                <img src={Doacao}/>
+                            </span>
+                        </button>
+
+                        <p>Todas</p>
+                    </div>
+
+                    <div className='lojas-btn-container'>
+                        <button id='all' className='loja-btn'>
+                            <span>
+                                <AiOutlineMenu size={24}/>
+                            </span>
+                        </button>
+
+                        <p>Todas</p>
                     </div>
                 </div>
             </main>

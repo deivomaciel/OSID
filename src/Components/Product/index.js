@@ -1,15 +1,24 @@
-import { BsHeart } from 'react-icons/bs'
+import { AiFillHeart } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
 import './styles.css'
+import { useState } from 'react'
 
 function Pruduct(props) {
+    const [flag, setFlag] = useState(false)
+
+    const addProduct = () => {
+        setFlag(!flag)
+    }
+
     return (
         <div className='product-content'>
             <div className='product'>
                 <img src={props.src} />
-                <button className='favorite'>
+                <button className='favorite' onClick={() => {addProduct()}}>
                     <span>
-                        <BsHeart size={24}/>
+                        {
+                            !flag ? <AiFillHeart size={24} fill='#ccc' /> : <AiFillHeart size={24} fill='red'/>
+                        }
                     </span>
                 </button>
 
@@ -23,7 +32,7 @@ function Pruduct(props) {
 
                     <button className='add'>
                         <span>
-                            <AiOutlinePlus />
+                            <AiOutlinePlus/>
                         </span>
                     </button>
                 </div>
