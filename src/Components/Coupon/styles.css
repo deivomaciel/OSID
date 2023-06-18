@@ -98,7 +98,7 @@ a {
 
 .coupon {
     width: 100%;
-    padding: 0 16px 0 16px;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,10 +108,10 @@ a {
 }
 
 .coupon-info h3 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .coupon-info ul {
     margin-left: 16px;
-    font-size: 8px;
+    font-size: 11px;
 }
