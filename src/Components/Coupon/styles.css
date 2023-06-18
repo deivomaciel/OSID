@@ -85,12 +85,12 @@ a {
 }
 
 .shear p {
-    margin-right: 32px;
     width: 62px;
+    margin-right: 35px;
+    line-height: 14px;
 }
 
 .code h3 {
-    /* margin-top: -8px; */
     letter-spacing: 3px;
     font-size: 32px;
     color: #fff;

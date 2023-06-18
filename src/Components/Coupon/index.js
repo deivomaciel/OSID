@@ -34,13 +34,13 @@ function Coupon() {
                                 <p>Compartilhe seu código</p>
                                 <div className='spans'>
                                     <span>
-                                        <BsWhatsapp />
+                                        <BsWhatsapp size={20} />
                                     </span>
                                     <span>
-                                        <FaTelegramPlane />
+                                        <FaTelegramPlane size={20} />
                                     </span>
                                     <span>
-                                        <BsInstagram />
+                                        <BsInstagram size={20} />
                                     </span>
                                 </div>
                             </div>
