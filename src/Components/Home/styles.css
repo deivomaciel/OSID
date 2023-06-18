@@ -4,7 +4,7 @@ body {
 
 header {
     width: 100vw;
-    height: 170px;
+    height: 178px;
     padding: 16px;
     background-image: url(../../assets/vector2.png);
     background-size: 100%;
@@ -31,6 +31,10 @@ header img {
     align-items: center;
 }
 
+.input-container input {
+    width: 100%;
+}
+
 .input-container input:focus {
     outline: none;
 }
@@ -40,6 +44,7 @@ header img {
     margin-top: 3px;
     padding: 0 16px 0 16px;
     position: absolute;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +62,7 @@ header img {
 
 header input {
     width: 261.7px;
-    height: 40px;
+    height: 48px;
     border-radius: 60px;
     padding: 16px;
 }

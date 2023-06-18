@@ -115,7 +115,9 @@ function Home() {
                                 </button>
                             </div>
                         </div>
-                        <input type='search' />
+                        <di className='input-container'>
+                            <input type='search' />
+                        </di>
                     </div>
                 </div>
             </header>
