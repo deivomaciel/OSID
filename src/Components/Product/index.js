@@ -12,7 +12,7 @@ function Pruduct(props) {
 
     return (
         <div className='product-content'>
-            <div className='product'>
+            <div className={`product ${props.class}`}>
                 <img src={props.src} />
                 <button className='favorite' onClick={() => {addProduct()}}>
                     <span>
@@ -38,7 +38,7 @@ function Pruduct(props) {
                 </div>
             </div>
 
-            <div className='product-info'>
+            <div className={`product-info ${props.favInfo}`}>
                 <h3>{props.title}</h3>
                 <p>{props.info}</p>
             </div>

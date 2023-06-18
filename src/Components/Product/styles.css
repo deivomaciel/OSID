@@ -85,3 +85,14 @@ button {
     font-size: 10px;
     text-align: justify;
 }
+
+.fav,
+.fav-info p {
+    width: 150px;
+}
+
+
+
+
+
+

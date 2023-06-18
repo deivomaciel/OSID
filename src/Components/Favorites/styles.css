@@ -1,0 +1,36 @@
+.title-header {
+    padding: 16px;
+}
+
+.favorite-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.favorite-title span {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.show-itens {
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.itens-container > .product-content {
+    width: 150px;
+}

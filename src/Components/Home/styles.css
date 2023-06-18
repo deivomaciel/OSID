@@ -88,6 +88,11 @@ h2 {
     scroll-behavior: smooth;
 }
 
+.lojas-container::-webkit-scrollbar,
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
 .lojas-btn-container:nth-child(1) p {
     margin-top: 10px;
 }
