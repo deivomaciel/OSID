@@ -1,0 +1,126 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 170px;
+    padding: 16px;
+    background-image: url(../../assets/vector2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    margin-right: 8px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container span{
+    margin-top: 3px;
+    margin-left: 16px;
+    position: absolute;
+}
+
+header input {
+    width: 261.7px;
+    height: 40px;
+    border-radius: 60px;
+    padding: 16px;
+}
+
+.lojas {
+    width: 100vw;
+    padding: 16px 0 0 16px;
+    margin-top: -40px;
+    line-height: 25.18px;
+    display: block;
+}
+
+h2 {
+    font-size: 24.2105px;
+}
+
+.lojas-container {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.lojas-btn-container:nth-child(1) p {
+    margin-top: 10px;
+}
+
+p {
+    display: flex;
+    text-align: center;
+}
+
+.lojas-btn-container {
+    height: 118.34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+    scroll-snap-align: start;
+}
+
+.loja-btn {
+    width: 68px;
+    height: 68px;
+    border-radius: 60%;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+}
+
+.loja-btn span {
+    margin-top: 8px;
+}
+
+.btn-logo img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+aside {
+    margin-top: -8px;
+    padding: 16px 0 16px 16px;
+}
+
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+ }
