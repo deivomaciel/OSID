@@ -2,6 +2,11 @@
     padding: 16px;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 #back {
     height: 24px;
     text-decoration: none;
@@ -45,7 +50,7 @@
 }
 
 .coude-coupon {
-    width: 331px;
+    width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -85,7 +90,7 @@
 }
 
 .coupon {
-    width: 331.78px;
+    width: 100%;
     padding: 0 16px 0 16px;
     display: flex;
     align-items: center;

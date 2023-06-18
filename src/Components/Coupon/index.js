@@ -10,7 +10,7 @@ function Coupon() {
     return (
         <div className="countainer">
             <header className='coupon-header'>
-                <a href='/home' id='back'>
+                <a href='/' id='back'>
                     <span>
                         <MdArrowBackIosNew size={24}/>
                     </span>
@@ -26,7 +26,7 @@ function Coupon() {
                 <h3>Cupons disponíveis</h3>
 
                 <div className='coupons-container'>
-                    <a className='coude-coupon'>
+                    <a href='#' className='coude-coupon'>
                         <p>Ao indicar alguém, você e a pessoa ganham 10% off na primeira compra</p>
                         
                         <div className='code-section'>
@@ -44,7 +44,7 @@ function Coupon() {
                         </div>
                     </a>
 
-                    <a className='coupon'>
+                    <a href='#' className='coupon'>
                         <div className='coupon-info'>
                             <h3>R$30 para produtos qualificados</h3>
                             <ul>
@@ -58,7 +58,7 @@ function Coupon() {
                         </div>
                     </a>
 
-                    <a className='coupon'>
+                    <a href='#' className='coupon'>
                         <div className='coupon-info'>
                             <h3>R$5 para produtos da Dulce Café</h3>
                             <ul>
@@ -72,7 +72,7 @@ function Coupon() {
                         </div>
                     </a>
 
-                    <a className='coupon'>
+                    <a href='#' className='coupon'>
                         <div className='coupon-info'>
                             <h3>R$8 para produtos da Loja Irmã Dulce</h3>
                             <ul>
@@ -86,7 +86,7 @@ function Coupon() {
                         </div>
                     </a>
 
-                    <a className='coupon'>
+                    <a href='#' className='coupon'>
                         <div className='coupon-info'>
                             <h3>R$5 off em todo app</h3>
                             <ul>
