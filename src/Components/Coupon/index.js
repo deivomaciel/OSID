@@ -32,11 +32,17 @@ function Coupon() {
                         <div className='code-section'>
                             <div className='shear'>
                                 <p>Compartilhe seu código</p>
-                                <span>
-                                    <BsWhatsapp />
-                                    <FaTelegramPlane />
-                                    <BsInstagram />
-                                </span>
+                                <div className='spans'>
+                                    <span>
+                                        <BsWhatsapp />
+                                    </span>
+                                    <span>
+                                        <FaTelegramPlane />
+                                    </span>
+                                    <span>
+                                        <BsInstagram />
+                                    </span>
+                                </div>
                             </div>
                             <div className='code'>
                                 <h3>BRASA10</h3>

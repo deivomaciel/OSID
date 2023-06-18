@@ -45,13 +45,11 @@ a {
 .code-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .coude-coupon {
     width: 100%;
-    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,11 +60,11 @@ a {
 }
 
 .coude-coupon p {
-    width: 121.85px;
-    font-size: 12px;
+    width: 150px;
+    font-size: 15px;
     text-align: left;
     font-weight: 400;
-    line-height: 12.48px;
+    line-height: 20px;
 }
 
 .shear {
@@ -75,16 +73,25 @@ a {
     justify-content: space-between;
 }
 
+.spans {
+    display: flex;
+}
+
 .shear span {
-    margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
 }
 
 .shear p {
+    margin-right: 32px;
     width: 62px;
 }
 
 .code h3 {
-    margin-top: -8px;
+    /* margin-top: -8px; */
+    letter-spacing: 3px;
     font-size: 32px;
     color: #fff;
 }
