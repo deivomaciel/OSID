@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.home-header {
     width: 100vw;
     height: 178px;
     padding: 16px;
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
 }
 
-header img {
+.home-header img {
     width: 70px;
     height: 70px;
     margin-right: 8px;
@@ -73,7 +73,6 @@ header input {
     margin-top: -40px;
     line-height: 25.18px;
     display: block;
-    /* line-height: 16px; */
 }
 
 h2 {
@@ -84,7 +83,6 @@ h2 {
     width: 100%;
     margin-top: 16px;
     display: flex;
-    align-items: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;

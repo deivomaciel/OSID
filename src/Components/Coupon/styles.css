@@ -1,0 +1,105 @@
+.coupon-header {
+    padding: 16px;
+}
+
+#back {
+    height: 24px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    align-items: center;
+}
+
+.title-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.title-area img {
+    margin-top: 2px;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.show-coupons {
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.coupons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.code-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coude-coupon {
+    width: 331px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 17px;
+    border: 1px solid #000;
+    background: #5184BB;
+}
+
+.coude-coupon p {
+    width: 121.85px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 12.48px;
+}
+
+.shear {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shear span {
+    margin-left: 24px;
+}
+
+.shear p {
+    width: 62px;
+}
+
+.code h3 {
+    margin-top: -8px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.coupon {
+    width: 331.78px;
+    padding: 0 16px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 17px;
+    margin-top: 24px;
+}
+
+.coupon-info h3 {
+    font-size: 12px;
+}
+
+.coupon-info ul {
+    margin-left: 16px;
+    font-size: 8px;
+}

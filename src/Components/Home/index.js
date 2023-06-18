@@ -86,7 +86,7 @@ function Home() {
 
     return (
         <div>
-            <header>
+            <header className='home-header'>
                 <div className='header-container'>
                     <img src={LogoDulce} alt="Logo Irmã Dulce"/>
                     <div className='input-container'>
@@ -96,23 +96,23 @@ function Home() {
                             </span>
 
                             <div className='buttons'>
-                                <button>
+                                <a href='/coupon'>
                                     <span>
                                         <RiCoupon2Fill fill='#777777' size={16}/>
                                     </span>
-                                </button>
+                                </a>
 
-                                <button>
+                                <a href='favorite'>
                                     <span>
                                         <AiFillHeart fill='#777777' size={16}/>
                                     </span>
-                                </button>
+                                </a>
 
-                                <button>
+                                <a href='car'>
                                     <span>
                                         <BsFillCartFill fill='#777777' size={16}/>
                                     </span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <di className='input-container'>
