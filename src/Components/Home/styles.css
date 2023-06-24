@@ -145,3 +145,8 @@ aside {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
  }
+
+ .teste {
+    width: 100vw;
+    background: red;
+ }

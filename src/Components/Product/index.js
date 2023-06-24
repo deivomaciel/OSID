@@ -3,7 +3,7 @@ import { AiOutlinePlus } from 'react-icons/ai'
 import './styles.css'
 import { useState } from 'react'
 
-function Pruduct(props) {
+function Product(props) {
     const [flag, setFlag] = useState(false)
 
     const addProduct = () => {
@@ -46,4 +46,4 @@ function Pruduct(props) {
     )
 }
 
-export default Pruduct
+export default Product
