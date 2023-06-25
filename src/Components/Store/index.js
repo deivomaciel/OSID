@@ -1,15 +1,15 @@
 function Store(props) {
     return (
-        <button className="w-20 flex flex-col items-center rounded-lg p-2 focus:bg-zinc-200 snap-start">
-            <div className="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center">
+        <button className=" w-28 h-24 p-2 border transition ease-in-out hover:scale-110 hover:shadow-md duration-300 flex shrink-0 flex-col justify-center items-center rounded-lg">
+            <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center">
                 <img 
                     src={props.path}
                     alt={props.alt}
-                    className="w-14 h-14 rounded-full object-cover"
+                    className="w-10 h-10 rounded-full object-cover"
                 />
             </div>
 
-            <h2 className="text-center font-normal mt-1.5">{props.name}</h2>
+            <h2 className="text-center text-xs mt-1.5">{props.name}</h2>
         </button>
     )
 }

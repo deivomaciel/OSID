@@ -2,7 +2,7 @@ import { MdArrowBackIosNew } from 'react-icons/md'
 import { BsFillHeartFill } from 'react-icons/bs'
 import Product from '../Product'
 import Produto2 from '../../assets/product2.jpeg'
-import Produto3 from '../../assets/produto3.jpeg'
+import Produto3 from '../../assets/produto3.png'
 import Produto7 from '../../assets/produto7.jpeg'
 import './styles.css'
 

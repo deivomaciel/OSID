@@ -11,36 +11,37 @@ function Product(props) {
     }
 
     return (
-        <div className='product-content'>
-            <div className={`product ${props.class}`}>
-                <img src={props.src} />
-                <button className='favorite' onClick={() => {addProduct()}}>
+        <div className='w-48 rounded-xl border relative flex-none'>
+            <div className='h-36 relative bg-zinc-200 rounded-t-xl'>
+                <img className='w-full h-full object-cover rounded-tl-xl rounded-tr-xl' src={props.src} />
+                
+                <button className='absolute top-2 right-4' onClick={() => {addProduct()}}>
                     <span>
                         {
-                            !flag ? <AiFillHeart size={24} fill='#ccc' /> : <AiFillHeart size={24} fill='red'/>
+                            !flag ? <AiFillHeart size={24} fill='#ccc' /> : <AiFillHeart size={24} fill='red' />
                         }
                     </span>
                 </button>
 
-                <div className='btn-footer'>
-                    <button className='price'>
-                        <span>
-                            <p id='sifra'>R$</p>
-                            <p>{props.value}</p>
+                <div className='gap-2 p-4 absolute bottom-0 flex justify-between'>
+                    <button className='w-10 h-6 rounded-md bg-white flex items-center justify-center'>
+                        <span className='flex items-center justify-center'>
+                            <p className='text-green-500' id='sifra'>R$</p>
+                            <p className='text-xs text-green-500'>{props.value}</p>
                         </span>
                     </button>
 
-                    <button className='add'>
+                    <button className='add w-8 h-6 rounded-md flex items-center justify-center bg-white'>
                         <span>
-                            <AiOutlinePlus/>
+                            <AiOutlinePlus size={12}/>
                         </span>
                     </button>
                 </div>
             </div>
 
-            <div className={`product-info ${props.favInfo}`}>
-                <h3>{props.title}</h3>
-                <p>{props.info}</p>
+            <div className={`w-full p-4 ${props.favInfo}`}>
+                <h3 className='font-smibold text-md'>{props.title}</h3>
+                <p className='mt-2 text-xs text-justify text-zinc-600'>{props.info}</p>
             </div>
         </div>
     )

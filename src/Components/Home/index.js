@@ -10,9 +10,8 @@ function Home() {
         <div className='w-screen h-screen'>
             <Header />
             
-            <div className='mt-4 ml-4'>
-                <h2 className='font-bold text-2xl'>Nossas Lojas</h2>
-
+            <div className='mt-4 ml-8'>
+                <h2 className='text-md'>Nossas Lojas</h2>
                 <Slider>
                     {
                         lojas.map(store => {
@@ -22,12 +21,12 @@ function Home() {
                         })
                     }
 
-                    <button className="w-20 flex flex-col items-center rounded-lg p-2 focus:bg-zinc-200 snap-start">
-                        <div className="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center">
+                    <button className="flex w-28 h-24 flex p-2 transition ease-in-out hover:scale-110 hover:shadow-md duration-300 shrink-0 flex-col justify-center items-center rounded-lg focus:bg-zinc-200 border">
+                        <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center">
                             <AiOutlineMenu size={32} />
                         </div>
 
-                        <h2 className="text-center font-normal mt-1.5">Todas as Lojas</h2>
+                        <h2 className="text-center text-xs font-normal mt-1.5">Todas as Lojas</h2>
                     </button>
                 </Slider>
             </div>
@@ -35,9 +34,8 @@ function Home() {
             {
                 lojas.map(store => {
                     return (
-                        <div className='mt-4 ml-4'>
-                            <h2 className='font-bold text-2xl'>{store.name}</h2>
-
+                        <div className='mt-4 ml-8'>
+                            <h2 className='text-md'>{store.name}</h2>
                             <Slider>
                                 {
                                     store.products && (
