@@ -8,7 +8,7 @@ import LogoDulce from '../../assets/logo_dulce.png'
 
 function Header() {
     return (
-        <header className='flex shadow-lg h-12 max-w-7xl mx-auto sm:px-6 lg:px-8 w-screen items-center justify-between p-4'>
+        <header className='flex shadow-lg h-16 max-w-7xl mx-auto sm:px-6 lg:px-8 w-screen items-center justify-between p-4'>
             <img className='w-9 h-9 hidden sm:block' src={LogoDulce}/>
 
             <div className="flex justify-center items-center border-2 rounded-md pl-4">
@@ -18,7 +18,7 @@ function Header() {
                 <input 
                     type='search'
                     placeholder="Pesquisar produto" 
-                    className="h-6  text-xs focus:outline-none rounded-md"
+                    className="h-8 text-xs focus:outline-none rounded-md"
                 />
             </div>
 
@@ -31,7 +31,7 @@ function Header() {
                     </span>
                 </a>
 
-                <a href="#" className="sm:block transition ease-in-out duration-300 py-1.5 px-4 rounded-md bg-main-200 text-base text-white font-normal hover:bg-main-100">
+                <a href="#" className="sm:block h-10 p-4 transition ease-in-out duration-300 py-1.5 rounded-md bg-main-200 text-base text-white font-normal hover:bg-main-100">
                     Entrar
                 </a>
             </div>
