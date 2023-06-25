@@ -11,7 +11,7 @@ function Product(props) {
     }
 
     return (
-        <div className='w-48 rounded-xl border relative flex-none'>
+        <div className='w-48 rounded-xl border-2 relative flex-none snap-start'>
             <div className='h-36 relative bg-zinc-200 rounded-t-xl'>
                 <img className='w-full h-full object-cover rounded-tl-xl rounded-tr-xl' src={props.src} />
                 

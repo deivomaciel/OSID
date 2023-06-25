@@ -21,7 +21,7 @@ function Home() {
                         })
                     }
 
-                    <button className="flex w-28 h-24 flex p-2 transition ease-in-out hover:scale-110 hover:shadow-md duration-300 shrink-0 flex-col justify-center items-center rounded-lg focus:bg-zinc-200 border">
+                    <button className="flex w-28 h-24 flex p-2 transition ease-in-out hover:scale-110 hover:shadow-md duration-300 shrink-0 flex-col justify-center items-center rounded-lg focus:bg-zinc-200 border-2">
                         <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center">
                             <AiOutlineMenu size={32} />
                         </div>
