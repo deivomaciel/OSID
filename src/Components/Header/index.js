@@ -18,7 +18,7 @@ function Header() {
                 <input 
                     type='search'
                     placeholder="Pesquisar produto" 
-                    className="h-8 text-xs focus:outline-none rounded-md"
+                    className="md:w-96 w-32 h-8 text-xs focus:outline-none rounded-md"
                 />
             </div>
 
