@@ -11,10 +11,6 @@ function Header() {
         <header className='flex shadow-lg h-12 max-w-7xl mx-auto sm:px-6 lg:px-8 w-screen items-center justify-between p-4'>
             <img className='w-9 h-9 hidden sm:block' src={LogoDulce}/>
 
-            <button className="sm:hidden">
-                <AiOutlineMenu />
-            </button>
-
             <div className="flex justify-center items-center border-2 rounded-md pl-4">
                 <span className="opacity-25 mr-2">
                     <VscSearch size={12} />
@@ -35,7 +31,7 @@ function Header() {
                     </span>
                 </a>
 
-                <a href="#" className=" hidden sm:block transition ease-in-out duration-300 py-1.5 px-4 rounded-md bg-main-200 text-base text-white font-normal hover:bg-main-100">
+                <a href="#" className="sm:block transition ease-in-out duration-300 py-1.5 px-4 rounded-md bg-main-200 text-base text-white font-normal hover:bg-main-100">
                     Entrar
                 </a>
             </div>
