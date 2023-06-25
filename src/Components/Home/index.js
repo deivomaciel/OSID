@@ -10,8 +10,8 @@ function Home() {
         <div className='w-screen h-screen'>
             <Header />
             
-            <div className='mt-4 ml-8'>
-                <h2 className='text-md'>Nossas Lojas</h2>
+            <div className='mt-4'>
+                <h2 className='text-md ml-8'>Nossas Lojas</h2>
                 <Slider>
                     {
                         lojas.map(store => {
@@ -34,8 +34,8 @@ function Home() {
             {
                 lojas.map(store => {
                     return (
-                        <div className='mt-4 ml-8'>
-                            <h2 className='text-md'>{store.name}</h2>
+                        <div className='mt-4'>
+                            <h2 className='text-md ml-8'>{store.name}</h2>
                             <Slider>
                                 {
                                     store.products && (

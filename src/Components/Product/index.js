@@ -24,12 +24,12 @@ function Product(props) {
                 </button>
 
                 <div className='gap-2 p-4 absolute bottom-0 flex justify-between'>
-                    <button className='w-10 h-6 rounded-md bg-white flex items-center justify-center'>
+                    <div className='w-10 h-6 rounded-md bg-white flex items-center justify-center'>
                         <span className='flex items-center justify-center'>
                             <p className='text-green-500' id='sifra'>R$</p>
                             <p className='text-xs text-green-500'>{props.value}</p>
                         </span>
-                    </button>
+                    </div>
 
                     <button className='add w-8 h-6 rounded-md flex items-center justify-center bg-white'>
                         <span>
