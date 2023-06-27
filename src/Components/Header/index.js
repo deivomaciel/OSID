@@ -23,7 +23,7 @@ function Header() {
             </div>
 
             <div className="flex justify-center items-center">
-                <a className="relative cursor-pointer mr-4">
+                <a href="/cart" className="transiton ease-in-out duration-300 relative cursor-pointer mr-4 hover:bg-zinc-200 p-1.5 rounded-full">
                     <CiShoppingCart size={32}/>
 
                     <span className="absolute bottom-0 right-0 w-4 h-4 bg-white flex justify-center items-center rounded-full">

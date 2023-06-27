@@ -13,7 +13,8 @@ import Produto7 from '../assets/produto7.jpeg'
 import Produto8 from '../assets/produto8.jpeg'
 
 const lojas = [
-    {
+    {   
+        id: 1,
         name: 'Dulce Café',
         image: DulceCafe,
         products: [
@@ -29,7 +30,8 @@ const lojas = [
             }
         ]
     },
-    {
+    {   
+        id: 2,
         name: 'Loja Irmã Dulce',
         image: Osid,
         products: [
@@ -45,7 +47,8 @@ const lojas = [
             }
         ]
     },
-    {
+    {   
+        id: 3,
         name: 'Dulce Natura',
         image: DulceNatura,
         products: [
@@ -61,7 +64,8 @@ const lojas = [
             }
         ]
     },
-    {
+    {   
+        id: 4,
         name: 'Dulce Sabor',
         image: DulceSabor,
         products: [
@@ -77,7 +81,8 @@ const lojas = [
             }
         ]
     },
-    {
+    {   
+        id: 5,
         name: 'Doações',
         image: Doacao,
         donations: [
