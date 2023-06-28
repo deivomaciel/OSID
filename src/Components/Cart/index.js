@@ -6,7 +6,7 @@ import Produto from '../../assets/produto1.png'
 import './mediaQueries.css'
 
 function Cart() {
-    const cartItems = JSON.parse(localStorage.getItem('cart'))
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || []
     console.log(cartItems)
 
     return (
