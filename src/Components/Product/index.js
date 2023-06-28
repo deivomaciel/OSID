@@ -1,10 +1,37 @@
 import { AiFillHeart } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
-import './styles.css'
 import { useState } from 'react'
 
 function Product(props) {
     const [flag, setFlag] = useState(false)
+
+    const addToCart = () => {
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || []
+        let itemIndex
+
+        const product = {
+            title: props.title,
+            imagePath: props.src,
+            price: props.value,
+            desc: props.info,
+            quantity: 1
+        }
+
+        const existingProduct = cartItems.find((item, index) => {
+            itemIndex = index
+            return item.title === product.title
+        })
+
+        if(existingProduct) {
+            existingProduct.quantity += 1
+            cartItems[itemIndex] = existingProduct
+
+        } else {
+            cartItems.push(product)
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cartItems))
+    }
 
     const addProduct = () => {
         setFlag(!flag)
@@ -31,7 +58,10 @@ function Product(props) {
                         </span>
                     </div>
 
-                    <button className='add w-8 h-6 rounded-md flex items-center justify-center bg-white'>
+                    <button 
+                        className='add w-8 h-6 rounded-md flex items-center justify-center bg-white'
+                        onClick={() => addToCart()}
+                    >
                         <span>
                             <AiOutlinePlus size={12}/>
                         </span>

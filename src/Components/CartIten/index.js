@@ -17,7 +17,7 @@ function CartIten(props) {
                             -
                         </button>
                         <span className="border-y-2 w-full flex items-center justify-center">
-                            3
+                            {props.quantity}
                         </span>
                         <button className="border-2 w-full rounded-r-full transition ease-in-out duration-300 hover:bg-zinc-200">
                             +

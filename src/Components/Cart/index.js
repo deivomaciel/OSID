@@ -6,6 +6,9 @@ import Produto from '../../assets/produto1.png'
 import './mediaQueries.css'
 
 function Cart() {
+    const cartItems = JSON.parse(localStorage.getItem('cart'))
+    console.log(cartItems)
+
     return (
         <div>
             <div className='p-4 flex items-center shadow-lg h-16 max-w-7xl mx-auto sm:px-6 lg:px-8 w-screen'>
@@ -26,22 +29,12 @@ function Cart() {
                     <h3 className='border-b mb-6'>Carrinho de compras</h3>
 
                     <div className='flex flex-col gap-6'>
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
-                        <CartIten quantity={1} price={10} total={10} title={'Chaveiro da Dulce'} path={Produto3} />
+                        {
+                            cartItems.map(item => {
+                                return <CartIten quantity={item.quantity} price={item.price} total={item.price * item.quantity} title={item.title} path={item.imagePath} />
+                            })
+                        }
+
                     </div>
                 </div>
 
