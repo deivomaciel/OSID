@@ -1,7 +1,7 @@
 function CartIten(props) {
     return (
-        <div className="rounded-lg shadow-md flex justify-between sm:justify-start pr-4 items-center">
-            <div className="w-24 h-24 sm:w-32 sm:h-32">
+        <div className="rounded-lg shadow-md flex sm:justify-start items-center">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 flex-none bg-zinc-200">
                 <img 
                     className="rounded-l-lg w-full h-full object-cover" 
                     src={props.path} 
@@ -9,10 +9,11 @@ function CartIten(props) {
                 />
             </div>
 
-            <div className="flex items-center justify-center sm:ml-8">
-                <div className=" border-r pr-4 border-black flex flex-col justify-center">
-                    <h3 className="text-sm lg:text-base font-bold">{props.title}</h3>
-                    <div className="flex lg:w-36 h-10 mt-2">
+            <div className="flex items-center ml-4 sm:ml-8">
+                <div className="border-r w-36 md:w-48 pr-4 border-black flex flex-col justify-center">
+                    <h3 className="text-xs lg:text-base font-bold">{props.title}</h3>
+
+                    <div className="flex w-28  lg:w-36 h-10 mt-2">
                         <button className="border-2 rounded-l-full w-full transition ease-in-out duration-300 hover:bg-zinc-200">
                             -
                         </button>
@@ -25,7 +26,7 @@ function CartIten(props) {
                     </div>
                 </div>
 
-                <div className="ml-4">
+                <div className="ml-2">
                     <p className="text-xs lg:text-sm">{props.quantity} x R${props.price}</p>
                     <p className="text-2xl lg:text-4xl font-bold">R${props.total}</p>
                 </div>

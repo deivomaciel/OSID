@@ -59,7 +59,7 @@ function Product(props) {
                     </div>
 
                     <button 
-                        className='add w-8 h-6 rounded-md flex items-center justify-center bg-white'
+                        className='transition ease-in-out duration-300 hover:scale-110 add w-8 h-6 rounded-md flex items-center justify-center bg-white'
                         onClick={() => addToCart()}
                     >
                         <span>
