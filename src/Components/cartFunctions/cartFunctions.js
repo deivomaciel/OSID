@@ -33,8 +33,6 @@ const cart = () => {
             existingProduct.quantity == 0 && cartItems.splice(itemIndex, 1)
         }
         localStorage.setItem('cart', JSON.stringify(cartItems))
-
-        console.log(cartItems)
     }
 
     return {

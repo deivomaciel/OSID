@@ -25,7 +25,7 @@ function Cart() {
 
             <div className='cart-itens p-4 lg:flex justify-between flex-shrink'>
                 <div className='w-full mr-6 text-lg'>
-                    <h3 className='border-b mb-6'>Carrinho de compras</h3>
+                    <h3 className='border-b mb-6'>Itens:</h3>
 
                     <div className='flex flex-col gap-6'>
                         {

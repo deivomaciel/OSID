@@ -7,6 +7,12 @@ import { AiOutlineMenu } from "react-icons/ai"
 import LogoDulce from '../../assets/logo_dulce.png'
 
 function Header() {
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || []
+
+    const totalQuantity = cartItems.reduce((acc, quantity) => {
+        return acc + quantity.quantity
+    }, 0)
+
     return (
         <header className='flex shadow-lg mb-8 h-16 max-w-7xl mx-auto sm:px-6 lg:px-8 w-screen items-center justify-between p-4'>
             <img className='w-9 h-9 hidden sm:block' src={LogoDulce}/>
@@ -26,9 +32,13 @@ function Header() {
                 <a href="/cart" className="transiton ease-in-out duration-300 relative cursor-pointer mr-4 hover:bg-zinc-200 p-1.5 rounded-full">
                     <CiShoppingCart size={32}/>
 
-                    <span className="absolute bottom-0 right-0 w-4 h-4 bg-white flex justify-center items-center rounded-full">
-                        <p className="text-xs">0</p>
-                    </span>
+                    {
+                        totalQuantity > 0 && (
+                            <span className="absolute bottom-2 right-2 right-0 w-4 h-4 bg-white flex justify-center items-center rounded-full bg-red-200">
+                                <p className="text-xs">{totalQuantity}</p>
+                            </span>
+                        )
+                    }
                 </a>
 
                 <a href="/login" className="sm:block h-10 p-4 transition ease-in-out duration-300 py-1.5 rounded-md bg-main-200 text-base text-white font-normal hover:bg-main-100">
