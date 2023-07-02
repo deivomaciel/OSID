@@ -1,36 +1,18 @@
 import { AiFillHeart } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { useState } from 'react'
+import cartFunctions from '../cartFunctions/cartFunctions'
 
 function Product(props) {
     const [flag, setFlag] = useState(false)
+    const cart = cartFunctions()
 
-    const addToCart = () => {
-        const cartItems = JSON.parse(localStorage.getItem('cart')) || []
-        let itemIndex
-
-        const product = {
-            title: props.title,
-            imagePath: props.src,
-            price: props.value,
-            desc: props.info,
-            quantity: 1
-        }
-
-        const existingProduct = cartItems.find((item, index) => {
-            itemIndex = index
-            return item.title === product.title
-        })
-
-        if(existingProduct) {
-            existingProduct.quantity += 1
-            cartItems[itemIndex] = existingProduct
-
-        } else {
-            cartItems.push(product)
-        }
-
-        localStorage.setItem('cart', JSON.stringify(cartItems))
+    const productData = {
+        title: props.title,
+        imagePath: props.src,
+        price: props.value,
+        desc: props.info,
+        quantity: 1
     }
 
     const addProduct = () => {
@@ -60,7 +42,7 @@ function Product(props) {
 
                     <button 
                         className='transition ease-in-out duration-300 hover:scale-110 add w-8 h-6 rounded-md flex items-center justify-center bg-white'
-                        onClick={() => addToCart()}
+                        onClick={() => cart.add(productData)}
                     >
                         <span>
                             <AiOutlinePlus size={12}/>
