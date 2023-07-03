@@ -4,8 +4,16 @@ import Product from '../Product'
 import Slider from '../Slider'
 import { AiOutlineMenu } from 'react-icons/ai'
 import lojas from '../../api/storesProvider'
+import { useState } from 'react'
 
 function Home() {
+    const [logedUser, setLogedUser] = useState(false)
+
+    const verifyUser = () => {
+        const userUID = JSON.parse(localStorage.getItem('uid'))
+        userUID ? setLogedUser(true) : setLogedUser(false)
+    }
+
     return (
         <div className='w-screen h-screen'>
             <Header />
